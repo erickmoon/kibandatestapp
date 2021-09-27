@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="company_logo">Company name</string>
+    <string name="select_category_to_continue">Select category to continue</string>
+    <string name="read_our">Read our</string>
+    <string name="terms_and_conditions">terms and conditions</string>
+    <string name="and">and</string>
+    <string name="privacy_policy">privacy policy</string>
+    <string name="customer">Customer</string>
+    <string name="sales_agent">Sales agent</string>
+    <string name="who_is_a_customer">Who is a customer?</string>
+    <string name="who_is_an_agent">Who is an agent?</string>
+    <string name="email_address">Fullname*</string>
+    <string name="email_address_legit">Email address*</string>
+    <string name="country">Country*</string>
+    <string name="attachments">Attachments*</string>
+    <string name="account">Account</string>
+    <string name="order">Order</string>
+    <string name="alerts">Alerts</string>
+    <string name="home">Home</string>
+    <string name="my_orders">My orders</string>
+    <string name="my_tasks">Tasks</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="search_anything_here_">Search anything here...</string>
+    <string name="category">Category</string>
+    <string name="sponsored_items">Sponsored items</string>
+    <string name="top_featured_item">Top featured item</string>
+</resources>

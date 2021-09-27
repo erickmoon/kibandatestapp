@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/whole_notification"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginTop="2dp"
+    android:orientation="horizontal"
+    android:padding="2dp">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_weight="7"
+        android:layout_marginStart="3dp"
+        android:layout_width="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginEnd="10dp"
+            android:id="@+id/notification_title"
+            
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+        <View
+            android:layout_marginTop="5dp"
+            android:id="@+id/notification_date_time"
+            android:layout_width="160dp"
+            android:textColor="@color/colorPrimaryDark"
+            
+            android:layout_gravity="center_vertical"
+            android:layout_height="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="12sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="end"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/notification_image"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

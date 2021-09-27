@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerRegisterActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="340dp">
+                        <TextView
+                            android:textSize="25sp"
+                            android:elevation="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="top"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textColor="@color/white"
+                            android:text="Customer Registration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+
+                        android:elevation="20dp"
+                        android:layout_marginTop="200dp"
+                        android:background="@drawable/login_background_curved"
+                        android:layout_width="match_parent"
+                        android:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:layout_height="wrap_content">
+                            <View
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="28dp"
+                                android:layout_height="4dp"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:background="@drawable/bottom_popup_top_span"
+                                android:layout_gravity="center_horizontal" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="25dp"
+                            android:paddingEnd="25dp">
+
+                            <RelativeLayout
+                                android:layout_marginBottom="8dp"
+                                android:id="@+id/email_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <EditText
+                                    android:textSize="13sp"
+                                    android:textColor="@color/white"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="textEmailAddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginTop="15dp"
+                                    android:background="@drawable/border_edittext"
+                                    android:paddingStart="10dp"
+                                    android:hint="@string/email_address"
+
+                                    android:textColorHint="@color/darker_gray"/>
+                                <TextView
+                                    android:visibility="visible"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="7dp"
+                                    android:background="@color/white"
+                                    android:text="@string/email_address"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"/>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_marginBottom="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <EditText
+
+                                    android:textSize="13sp"
+                                    android:textColor="@color/white"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="textEmailAddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginTop="15dp"
+                                    android:background="@drawable/border_edittext"
+                                    android:paddingStart="10dp"
+                                    android:hint="@string/email_address_legit"
+
+                                    android:textColorHint="@color/darker_gray"/>
+                                <TextView
+                                    android:visibility="visible"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="7dp"
+                                    android:background="@color/white"
+                                    android:text="@string/email_address_legit"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"/>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_marginBottom="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <FrameLayout
+                                    android:layout_marginTop="15dp"
+                                    android:background="@drawable/border_edittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <Spinner
+                                        android:id="@+id/product_sub_category"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="text"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:padding="8dp"
+                                        android:hint="@string/country"
+                                        android:textColorHint="@color/white"/>
+                                </FrameLayout>
+
+
+                                <TextView
+                                    android:visibility="visible"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="7dp"
+                                    android:background="@color/white"
+                                    android:text="@string/country"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"/>
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_marginBottom="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <FrameLayout
+                                    android:layout_marginTop="15dp"
+                                    android:background="@drawable/border_edittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:padding="8dp"
+                                            android:layout_marginTop="30dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="13sp"
+                                                android:text="National ID/Passport (both sides)"
+                                                android:layout_marginBottom="3dp"/>
+                                            <ImageView
+
+                                                android:layout_width="80dp"
+                                                android:layout_height="80dp"
+                                                android:src="@drawable/ic_photo"
+                                                />
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:padding="8dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="13sp"
+                                                android:text="Your face photo"
+                                                android:layout_marginBottom="3dp"/>
+                                            <ImageView
+
+                                                android:layout_width="80dp"
+                                                android:layout_height="80dp"
+                                                android:src="@drawable/ic_photo"
+                                                />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+                                </FrameLayout>
+
+
+                                <TextView
+                                    android:visibility="visible"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="7dp"
+                                    android:background="@color/white"
+                                    android:text="@string/attachments"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"/>
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_marginEnd="1dp"
+                                android:gravity="start|center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Why do we need these?"
+                                android:drawablePadding="4dp"
+                                android:drawableTint="@color/darker_gray"
+                                android:drawableRight="@drawable/ic_help"
+                                android:textColor="@color/darker_gray"
+                                android:textStyle="bold"
+                                android:textSize="13sp"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/btnFinish"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_margin="23dp"
+                            android:background="@drawable/grey_curved_filled"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="wrap_content"
+                                android:text="Finish"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_gravity="center"
+                            android:gravity="bottom"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Already have an account?"
+                                android:textColor="@color/darker_gray"
+                                android:textStyle="bold"
+                                android:textSize="13sp"/>
+                            <TextView
+
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="1dp"
+                                android:gravity="start|center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:text="login"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+                                android:textSize="13sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>
